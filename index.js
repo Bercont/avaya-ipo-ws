@@ -1,6 +1,6 @@
 
 // https://millermedeiros.github.io/mdoc/examples/node_api/doc/net.html#net.createServer
-// telenet 127.0.0.1 8080
+// Probar con: telnet 127.0.0.1 8080
 
 var net = require('net');
 const fs = require('fs');
@@ -26,7 +26,7 @@ var server = net.createServer(function(socket) { //'connection' listener
         console.log('server disconnected');
     });
 
-    socket.write('Hello cliet, this is Bersont IPO Avaya Bridge Server.\r\n');
+    socket.write('Hello client, this is Bercont IPO Avaya Bridge Server.\r\n');
     socket.pipe(socket);
 });
 
