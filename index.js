@@ -26,7 +26,7 @@ var server = net.createServer(function(socket) { //'connection' listener
         console.log('server disconnected');
     });
 
-    socket.write('Hello cliet, this is IPO Avaya Bridge Server.\r\n');
+    socket.write('Hello cliet, this is Bersont IPO Avaya Bridge Server.\r\n');
     socket.pipe(socket);
 });
 
